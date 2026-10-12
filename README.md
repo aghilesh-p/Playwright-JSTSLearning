@@ -19,6 +19,15 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `02_Chapter_Keywords_and_Identifiers/08_Comments.js` - see single-line, multi-line, and JSDoc comments.
 - `02_Chapter_Keywords_and_Identifiers/09_IQ.js` - explore identifier rules, case sensitivity, naming styles, and Unicode identifiers.
 
+### 3. JavaScript Literals
+
+- `03_Chapter_JS_Literals/10_Literals.js` - review common literal values and their types.
+- `03_Chapter_JS_Literals/11_literal_types.js` - assign a literal value to a variable.
+- `03_Chapter_JS_Literals/12_Null_Undefined.js` - compare `null` and `undefined` values and their types.
+- `03_Chapter_JS_Literals/13_Null_Undefined2.js` - see examples of `null` and `undefined`.
+- `03_Chapter_JS_Literals/14_Literals_IQ.js` - explore `null` and `undefined` with comparison examples.
+- `03_Chapter_JS_Literals/15_Numbers.js` - explore integer, floating-point, and exponential number literals.
+
 ## Running an example
 
 Install [Node.js](https://nodejs.org/) and run a script from the repository root:
