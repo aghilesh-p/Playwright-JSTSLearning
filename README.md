@@ -63,12 +63,40 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `05_Chapter_JS_Incr_Decr_OP/43_Post_Dec_OP.js` - observe the value returned by postfix decrement.
 - `05_Chapter_JS_Incr_Decr_OP/44_Nullish.js` - provide fallback values with the nullish coalescing operator.
 
+### 6. JavaScript If/Else Statements and Conditions
+
+- `06_Chapter_JS_IF_ELSE_Statement_Condition/45_If_Else.js` - choose an outcome with a basic `if`/`else` condition.
+- `06_Chapter_JS_IF_ELSE_Statement_Condition/46_If_Else_Nested.js` - evaluate nested conditions for driving eligibility.
+- `06_Chapter_JS_IF_ELSE_Statement_Condition/47_Ternary_Vs_IfElse.js` - compare conditional expressions with `if`/`else` statements.
+- `06_Chapter_JS_IF_ELSE_Statement_Condition/48_Multiple_IfElse.js` - validate a score and assign a grade with conditional branches.
+
+### 7. JavaScript Switch Statements
+
+- `07_Chapter_JS_Switch_Statement/49_switch_statement.js` - map a number to a day of the week and run a matching case.
+- `07_Chapter_JS_Switch_Statement/50_Int_Q.js` - observe switch fall-through across month cases when `break` is omitted.
+- `07_Chapter_JS_Switch_Statement/51_Int_Q.js` - map a number to a day of the week with a default case.
+- `07_Chapter_JS_Switch_Statement/52_API_Switch_Case.js` - map an HTTP response code to a message.
+- `07_Chapter_JS_Switch_Statement/53_Switch_Group.js` - group browser cases by browser engine.
+- `07_Chapter_JS_Switch_Statement/54_Int_Q.js` - observe switch fall-through across fruit cases.
+- `07_Chapter_JS_Switch_Statement/55_Int_Q.js` - evaluate score ranges with `switch (true)`.
+- `07_Chapter_JS_Switch_Statement/56_Int_Q.js` - explore duplicate switch cases and block-scoped declarations.
+- `07_Chapter_JS_Switch_Statement/57_Int_Q.js` - compare `false` and `0` in switch cases.
+
+### 8. JavaScript User Input
+
+- `08_Chapter_JS_UserInputs/58_UserInput.js` - read a browser prompt and check whether a number is even or odd.
+- `08_Chapter_JS_UserInputs/59_Nodejs_User_IP.js` - collect terminal input with Node.js `readline`.
+- `08_Chapter_JS_UserInputs/60_Prompt_sync.js` - collect synchronous terminal input with `prompt-sync`.
+- `08_Chapter_JS_UserInputs/61_FS_readFile.js` - read input from standard input with Node.js `fs`.
+
 ## Running an example
 
-Install [Node.js](https://nodejs.org/) and run a script from the repository root:
+Install [Node.js](https://nodejs.org/), install the project dependencies, and run a script from the repository root:
 
 ```sh
+npm install
 node 01_Chapter_JS_Basics/01_HelloWorld.js
 ```
 
 Replace the script path with any other `.js` file in the chapters to run a different example.
+The `prompt-sync` dependency is used by the synchronous terminal input example.

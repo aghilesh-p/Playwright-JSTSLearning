@@ -1,0 +1,23 @@
+{
+  "name": "jsbasics",
+  "version": "1.0.0",
+  "description": "Learning JavaScript and TypeScript fundamentals as a foundation for working with Playwright and AI.",
+  "homepage": "https://github.com/aghilesh-p/Playwright-JSTSLearning#readme",
+  "bugs": {
+    "url": "https://github.com/aghilesh-p/Playwright-JSTSLearning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aghilesh-p/Playwright-JSTSLearning.git"
+  },
+  "license": "ISC",
+  "author": "Aghilesh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
