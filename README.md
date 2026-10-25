@@ -88,6 +88,36 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `08_Chapter_JS_UserInputs/59_Nodejs_User_IP.js` - collect terminal input with Node.js `readline`.
 - `08_Chapter_JS_UserInputs/60_Prompt_sync.js` - collect synchronous terminal input with `prompt-sync`.
 - `08_Chapter_JS_UserInputs/61_FS_readFile.js` - read input from standard input with Node.js `fs`.
+- `08_Chapter_JS_UserInputs/hw.js` - print the multiplication table for 5.
+
+### 9. JavaScript `for` Loops
+
+- `09_Chapter_JS_Loops_for/62_for_loop.js` - use `for` loops with different starting values and update expressions.
+- `09_Chapter_JS_Loops_for/63_for_loop_varname.js` - use a custom loop variable name.
+- `09_Chapter_JS_Loops_for/64_for_loop_eg.js` - count from 1 to 10 with a `for` loop.
+- `09_Chapter_JS_Loops_for/65_for_loop_IQ.js` - review valid loop identifiers and a condition that starts false.
+- `09_Chapter_JS_Loops_for/66_for_loop_IQ.js` - see why a `for` loop without a condition does not terminate.
+- `09_Chapter_JS_Loops_for/67_for_loop_with_if_else.js` - combine a `for` loop with an `if`/`else` condition.
+
+### 10. JavaScript `while` Loops
+
+- `10_Chapter_JS_Loops_WHILE/68_while_loop.js` - compare `while` and `for` loop structures.
+- `10_Chapter_JS_Loops_WHILE/69_while_loop_IQ.js` - repeat an action for a fixed number of attempts.
+- `10_Chapter_JS_Loops_WHILE/70_while_loop_IQ.js` - increment an age until a condition is met, then exit with `break`.
+- `10_Chapter_JS_Loops_WHILE/71_while_loop_break.js` - use `break` to stop an otherwise unbounded loop.
+
+### 11. JavaScript `do...while` Loops
+
+- `11_Chapter_JS_Loops_DoWhile/72_dowhile_loop.js` - retry an action using a `do...while` loop.
+- `11_Chapter_JS_Loops_DoWhile/73_while_vs_dowhile_loop.js` - compare pre-condition `while` loops with `do...while` loops.
+- `11_Chapter_JS_Loops_DoWhile/74_IQ.js` - check how a `for` loop behaves when its initial condition is false.
+- `11_Chapter_JS_Loops_DoWhile/75_IQ.js` - observe a `do...while` loop running once when its condition is false.
+
+### 12. JavaScript Arrays
+
+- `12_Chapter_JS_Arrays/76_Arrays_eg1.js` - access array elements and inspect array length.
+- `12_Chapter_JS_Arrays/77_Arrays_eg2.js` - compare bracket indexing with the `.at()` method, including negative indexes.
+- `12_Chapter_JS_Arrays/78_Arrays_eg3.js` - read array length and access elements with positive and negative indexes.
 
 ## Running an example
 
