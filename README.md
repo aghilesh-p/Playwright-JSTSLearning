@@ -118,6 +118,24 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `12_Chapter_JS_Arrays/76_Arrays_eg1.js` - access array elements and inspect array length.
 - `12_Chapter_JS_Arrays/77_Arrays_eg2.js` - compare bracket indexing with the `.at()` method, including negative indexes.
 - `12_Chapter_JS_Arrays/78_Arrays_eg3.js` - read array length and access elements with positive and negative indexes.
+- `12_Chapter_JS_Arrays/79_Mixed_array.js` - access elements in arrays containing values of different types.
+- `12_Chapter_JS_Arrays/80_Create_array_methods.js` - create arrays with literals, `Array`, `Array.of()`, and `Array.from()`.
+- `12_Chapter_JS_Arrays/81_Array_access_modify.js` - access and modify array elements.
+- `12_Chapter_JS_Arrays/82_Array_adding_removing.js` - add and remove array elements with `push()`, `pop()`, `shift()`, `unshift()`, and `splice()`.
+- `12_Chapter_JS_Arrays/83_Array_with_forloop_eg.js` - remove array elements and iterate over the remaining browsers.
+- `12_Chapter_JS_Arrays/84_Array_Searching.js` - search arrays with `indexOf()`, `lastIndexOf()`, and `includes()`.
+- `12_Chapter_JS_Arrays/85_Array_Find.js` - find matching elements and indexes with `find()` and related methods.
+- `12_Chapter_JS_Arrays/86_array_Iteration_diff_forloop.js` - compare array iteration with `for`, `for...of`, `forEach()`, `entries()`, and `for...in`.
+- `12_Chapter_JS_Arrays/87_Array_Transform_map_filter.js` - transform and filter array values with `map()` and `filter()`.
+- `12_Chapter_JS_Arrays/88_Array_String_sorting.js` - sort arrays of strings in lexicographic order.
+- `12_Chapter_JS_Arrays/89_Array_number_sorting.js` - observe default lexicographic sorting of numbers and strings.
+- `12_Chapter_JS_Arrays/89_lexicographic_sort.md` - explain default lexicographic sorting for strings, numbers, and alphanumeric values.
+- `12_Chapter_JS_Arrays/90_Array_normal_sorting.js` - sort numbers numerically and strings with `localeCompare()` or a numeric collator.
+- `12_Chapter_JS_Arrays/91_Array_Slice.js` - select array portions with `slice()` and positive or negative indexes.
+- `12_Chapter_JS_Arrays/91_Array_Slice.md` - explain `slice()` syntax, indexes, and examples.
+- `12_Chapter_JS_Arrays/92_Array_concat.js` - combine arrays with `concat()` and the spread syntax.
+- `12_Chapter_JS_Arrays/93_Array_Check.js` - check whether a value is an array with `Array.isArray()`.
+- `12_Chapter_JS_Arrays/94_Array_Transform_every_some.js` - test array elements with `every()` and `some()`.
 
 ## Running an example
 
