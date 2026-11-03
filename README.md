@@ -137,6 +137,13 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `12_Chapter_JS_Arrays/93_Array_Check.js` - check whether a value is an array with `Array.isArray()`.
 - `12_Chapter_JS_Arrays/94_Array_Transform_every_some.js` - test array elements with `every()` and `some()`.
 
+### 13. JavaScript Functions
+
+- `13_Chapter_JS_Functions/98_function.js` - declare and call functions, including calling a function before its declaration.
+- `13_Chapter_JS_Functions/99_Fn_Type1.js` - call functions with no parameters or return value.
+- `13_Chapter_JS_Functions/100_Fn_Type2.js` - return a value from a function with no parameters.
+- `13_Chapter_JS_Functions/101_Fn_Type3.js` - pass arguments to a function with no return value.
+
 ## Running an example
 
 Install [Node.js](https://nodejs.org/), install the project dependencies, and run a script from the repository root:
