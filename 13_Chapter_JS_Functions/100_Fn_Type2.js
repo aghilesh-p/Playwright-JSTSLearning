@@ -7,4 +7,6 @@ function sayHello() {
 }
 
 let message = sayHello(); // Calling the function and storing its return value in a variable
-console.log(message); // Output: Hello, welcome to JavaScript functions!
+console.log(message); // Output: Hello, welcome to JavaScript functions!    
+
+

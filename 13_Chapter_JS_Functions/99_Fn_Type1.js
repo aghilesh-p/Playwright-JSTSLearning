@@ -13,7 +13,7 @@ greet(); // Calling the function a third time to show that it can be reused mult
 function openBrowser() {
     console.log("Opening the browser...");
 }
-openBrowser(); // Calling the function to execute its code
+openBrowser(); // Calling the function to execute its code  
 
-let msg = greet(); // Calling the function and storing its return value (which is undefined) in a variable
-console.log(msg); // Output: undefined, since the function does not return any value
+let msg = greet(); // Calling the function and storing its return value (which is undefined) in a variable  
+console.log(msg); // Output: undefined, since the function does not return any value    

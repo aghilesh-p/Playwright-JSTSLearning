@@ -131,11 +131,14 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `12_Chapter_JS_Arrays/89_Array_number_sorting.js` - observe default lexicographic sorting of numbers and strings.
 - `12_Chapter_JS_Arrays/89_lexicographic_sort.md` - explain default lexicographic sorting for strings, numbers, and alphanumeric values.
 - `12_Chapter_JS_Arrays/90_Array_normal_sorting.js` - sort numbers numerically and strings with `localeCompare()` or a numeric collator.
-- `12_Chapter_JS_Arrays/91_Array_Slice.js` - select array portions with `slice()` and positive or negative indexes.
+- `12_Chapter_JS_Arrays/91_Array_Slice.js` - select array portions with `slice()`, positive or negative indexes, or copy the full array.
 - `12_Chapter_JS_Arrays/91_Array_Slice.md` - explain `slice()` syntax, indexes, and examples.
-- `12_Chapter_JS_Arrays/92_Array_concat.js` - combine arrays with `concat()` and the spread syntax.
+- `12_Chapter_JS_Arrays/92_Array_concat_spread.js` - combine arrays with `concat()` and the spread syntax.
 - `12_Chapter_JS_Arrays/93_Array_Check.js` - check whether a value is an array with `Array.isArray()`.
 - `12_Chapter_JS_Arrays/94_Array_Transform_every_some.js` - test array elements with `every()` and `some()`.
+- `12_Chapter_JS_Arrays/95_Array_Copy.js` - copy arrays with `slice()` and spread syntax, and compare copies with references.
+- `12_Chapter_JS_Arrays/96_Array_Destructuring.js` - assign array elements to variables with destructuring, including rest and skipped elements.
+- `12_Chapter_JS_Arrays/97_Array_Swap.js` - swap variable values with array destructuring.
 
 ### 13. JavaScript Functions
 
