@@ -145,7 +145,10 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `13_Chapter_JS_Functions/98_function.js` - declare and call functions, including calling a function before its declaration.
 - `13_Chapter_JS_Functions/99_Fn_Type1.js` - call functions with no parameters or return value.
 - `13_Chapter_JS_Functions/100_Fn_Type2.js` - return a value from a function with no parameters.
-- `13_Chapter_JS_Functions/101_Fn_Type3.js` - pass arguments to a function with no return value.
+- `13_Chapter_JS_Functions/101_Fn_Type3.js` - pass arguments to functions with no return value.
+- `13_Chapter_JS_Functions/102_Fn_Type4.js` - pass arguments to functions that return a value.
+- `13_Chapter_JS_Functions/103_Fn_Template_Literals.js` - build returned greeting and sum strings with template literals.
+- `13_Chapter_JS_Functions/104_Fn_Expression.js` - compare function declarations and function expressions.
 
 ## Running an example
 
