@@ -4,8 +4,8 @@ function greet(name) {
     console.log("Hello, " + name + "! Welcome to JavaScript functions!");
 }
 
-
-let greet1 = function(name) {
+// Anonymous function - function without a name
+let greet1 = function(name) {               // it can be either let or const or var
     console.log("Hello, " + name + "! Welcome to JavaScript functions!");
 }
 

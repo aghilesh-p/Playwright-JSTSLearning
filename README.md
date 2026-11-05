@@ -149,6 +149,9 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `13_Chapter_JS_Functions/102_Fn_Type4.js` - pass arguments to functions that return a value.
 - `13_Chapter_JS_Functions/103_Fn_Template_Literals.js` - build returned greeting and sum strings with template literals.
 - `13_Chapter_JS_Functions/104_Fn_Expression.js` - compare function declarations and function expressions.
+- `13_Chapter_JS_Functions/105_Fn_Arrow.js` - compare function declarations, function expressions, and arrow functions.
+- `13_Chapter_JS_Functions/106_Fn_Arrow_Eg.js` - write concise arrow functions for greetings and arithmetic.
+- `13_Chapter_JS_Functions/107_Fn_Arrow_Multiline.js` - use a multi-line arrow function with a conditional return.
 
 ## Running an example
 
