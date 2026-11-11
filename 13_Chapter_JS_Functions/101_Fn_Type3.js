@@ -16,10 +16,10 @@ console.log(msg); // Output: undefined, since the function does not return any v
 
 function sumOfTwoNumbers(num1, num2) {
     console.log("The sum of " + num1 + " and " + num2 + " is: " + (num1 + num2)); // Logging the sum of the two numbers
-}
+}   
 
 sumOfTwoNumbers(5, 10); // Calling the function with two arguments to execute its code
-sumOfTwoNumbers(20, 30);
+sumOfTwoNumbers(20, 30);    
 
 let result = sumOfTwoNumbers(15, 25); // Calling the function and storing its return value (which is undefined) in a variable
 console.log(result); // Output: undefined, since the function does not return any value

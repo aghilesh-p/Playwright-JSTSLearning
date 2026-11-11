@@ -152,6 +152,12 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `13_Chapter_JS_Functions/105_Fn_Arrow.js` - compare function declarations, function expressions, and arrow functions.
 - `13_Chapter_JS_Functions/106_Fn_Arrow_Eg.js` - write concise arrow functions for greetings and arithmetic.
 - `13_Chapter_JS_Functions/107_Fn_Arrow_Multiline.js` - use a multi-line arrow function with a conditional return.
+- `13_Chapter_JS_Functions/108_Fn_Real_Eg.js` - build a real-world HTTP status validation example using normal, expression, and arrow function styles.
+- `13_Chapter_JS_Functions/109_Fn_IIFE.js` - immediately invoke anonymous and arrow functions to run code once without needing a named function.
+- `13_Chapter_JS_Functions/110_Fn_Spread_as_argument.js` - pass array values into a function with the spread operator and collect extra arguments with a rest parameter.
+- `13_Chapter_JS_Functions/110_Fn_Spread_as_argument.md` - explain the spread/rest examples and how arguments are passed and captured.
+- `13_Chapter_JS_Functions/111_Fn_Return.js` - return status strings based on HTTP status codes and demonstrate function output.
+- `13_Chapter_JS_Functions/112_Return_Fn.js` - log a sequence of test steps using a simple function for automation-style actions.
 
 ## Running an example
 
