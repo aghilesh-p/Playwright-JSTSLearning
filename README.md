@@ -159,6 +159,10 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `13_Chapter_JS_Functions/111_Fn_Return.js` - return status strings based on HTTP status codes and demonstrate function output.
 - `13_Chapter_JS_Functions/112_Return_Fn.js` - log a sequence of test steps using a simple function for automation-style actions.
 
+### 14. JavaScript `var`, `let`, `const`, Hoisting, and TDZ
+
+- `14_Chapter_JS_Var_Let_Const_Hoisting_TDZ/File_Hoisting_TDZ.md` - explain variable and function hoisting, block scope, and the Temporal Dead Zone with simple examples.
+
 ## Running an example
 
 Install [Node.js](https://nodejs.org/), install the project dependencies, and run a script from the repository root:
