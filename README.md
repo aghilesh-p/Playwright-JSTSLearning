@@ -163,6 +163,21 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 
 - `14_Chapter_JS_Var_Let_Const_Hoisting_TDZ/File_Hoisting_TDZ.md` - explain variable and function hoisting, block scope, and the Temporal Dead Zone with simple examples.
 
+### 15. JavaScript Function Closures
+
+- `15_Chapter_Function_Closure/127_Closure.js` - create a closure that retains access to a browser name after the outer function has returned.
+
+### 16. JavaScript Strings
+
+- `16_Chapter_String/128_String_eg.js` - create strings with quotes and template literals, including multiline and interpolated values.
+- `16_Chapter_String/129_String_Fn.js` - inspect string length and characters using indexes, `at()`, `charAt()`, `charCodeAt()`, and `toUpperCase()`.
+- `16_Chapter_String/130_String_Search.js` - search strings with `includes()`, `startsWith()`, `endsWith()`, and `indexOf()`.
+
+### 24. Playwright Basics
+
+- `24_Playwright_Basics/playwright.config.ts` - configure the Playwright test directory, browsers, retries, and HTML reporting.
+- `24_Playwright_Basics/t/example.spec.ts` - verify the Playwright website title and navigate to the Getting Started section.
+
 ## Running an example
 
 Install [Node.js](https://nodejs.org/), install the project dependencies, and run a script from the repository root:
@@ -174,3 +189,16 @@ node 01_Chapter_JS_Basics/01_HelloWorld.js
 
 Replace the script path with any other `.js` file in the chapters to run a different example.
 The `prompt-sync` dependency is used by the synchronous terminal input example.
+
+## Running the Playwright example
+
+From the repository root, enter the Playwright chapter, install its dependencies, and run the example tests:
+
+```sh
+cd 24_Playwright_Basics
+npm install
+npx playwright install
+npx playwright test
+```
+
+The tests run in Chromium, Firefox, and WebKit. Open `playwright-report/index.html` to view the HTML report after the test run.
