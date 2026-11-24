@@ -129,10 +129,10 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `12_Chapter_JS_Arrays/87_Array_Transform_map_filter.js` - transform and filter array values with `map()` and `filter()`.
 - `12_Chapter_JS_Arrays/88_Array_String_sorting.js` - sort arrays of strings in lexicographic order.
 - `12_Chapter_JS_Arrays/89_Array_number_sorting.js` - observe default lexicographic sorting of numbers and strings.
-- `12_Chapter_JS_Arrays/89_lexicographic_sort.md` - explain default lexicographic sorting for strings, numbers, and alphanumeric values.
+- `00_learning/89_lexicographic_sort.md` - explain default lexicographic sorting for strings, numbers, and alphanumeric values.
 - `12_Chapter_JS_Arrays/90_Array_normal_sorting.js` - sort numbers numerically and strings with `localeCompare()` or a numeric collator.
 - `12_Chapter_JS_Arrays/91_Array_Slice.js` - select array portions with `slice()`, positive or negative indexes, or copy the full array.
-- `12_Chapter_JS_Arrays/91_Array_Slice.md` - explain `slice()` syntax, indexes, and examples.
+- `00_learning/91_Array_Slice.md` - explain `slice()` syntax, indexes, and examples.
 - `12_Chapter_JS_Arrays/92_Array_concat_spread.js` - combine arrays with `concat()` and the spread syntax.
 - `12_Chapter_JS_Arrays/93_Array_Check.js` - check whether a value is an array with `Array.isArray()`.
 - `12_Chapter_JS_Arrays/94_Array_Transform_every_some.js` - test array elements with `every()` and `some()`.
@@ -155,13 +155,13 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `13_Chapter_JS_Functions/108_Fn_Real_Eg.js` - build a real-world HTTP status validation example using normal, expression, and arrow function styles.
 - `13_Chapter_JS_Functions/109_Fn_IIFE.js` - immediately invoke anonymous and arrow functions to run code once without needing a named function.
 - `13_Chapter_JS_Functions/110_Fn_Spread_as_argument.js` - pass array values into a function with the spread operator and collect extra arguments with a rest parameter.
-- `13_Chapter_JS_Functions/110_Fn_Spread_as_argument.md` - explain the spread/rest examples and how arguments are passed and captured.
+- `00_learning/110_Fn_Spread_as_argument.md` - explain the spread/rest examples and how arguments are passed and captured.
 - `13_Chapter_JS_Functions/111_Fn_Return.js` - return status strings based on HTTP status codes and demonstrate function output.
 - `13_Chapter_JS_Functions/112_Return_Fn.js` - log a sequence of test steps using a simple function for automation-style actions.
 
 ### 14. JavaScript `var`, `let`, `const`, Hoisting, and TDZ
 
-- `14_Chapter_JS_Var_Let_Const_Hoisting_TDZ/File_Hoisting_TDZ.md` - explain variable and function hoisting, block scope, and the Temporal Dead Zone with simple examples.
+- `00_learning/120_File_Hoisting_TDZ.md` - explain variable and function hoisting, block scope, and the Temporal Dead Zone with simple examples.
 
 ### 15. JavaScript Function Closures
 
@@ -172,6 +172,24 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `16_Chapter_String/128_String_eg.js` - create strings with quotes and template literals, including multiline and interpolated values.
 - `16_Chapter_String/129_String_Fn.js` - inspect string length and characters using indexes, `at()`, `charAt()`, `charCodeAt()`, and `toUpperCase()`.
 - `16_Chapter_String/130_String_Search.js` - search strings with `includes()`, `startsWith()`, `endsWith()`, and `indexOf()`.
+
+### 17. JavaScript Objects
+
+- `17_Chapter_Objects_JS/131_Objects.js` - create objects and access case-sensitive properties with dot or bracket notation.
+- `17_Chapter_Objects_JS/132_Objects_Copy.js` - assign an object to another variable and observe that both names share the same object.
+- `17_Chapter_Objects_JS/133_Normal_Objects.js` - read, add, and update object properties.
+- `17_Chapter_Objects_JS/134_Objects_with_Fn.js` - define and call an object method that uses `this`.
+- `17_Chapter_Objects_JS/135_Complex_Objects.js` - explore nested objects, arrays, and methods in a larger user object.
+- `17_Chapter_Objects_JS/136_Config_Objects.js` - add, update, and delete properties in a configuration object.
+- `17_Chapter_Objects_JS/137_Call_By_Ref_vs_Call_By_Val.js` - compare primitive assignment with shared object references.
+- `17_Chapter_Objects_JS/138_Shallow_copy_Deep_copy.js` - compare shared references, shallow copies, and deep copies with `structuredClone()`.
+
+### Learning Resources
+
+- `00_learning/charAt_vs_at.md` - compare string `charAt()` and `at()`.
+- `00_learning/134_Objects_Explained.md` - explain object methods and `this` with a simple example.
+- `00_learning/135_Complex_Objects_Explained.md` - explain nested objects, arrays, and methods in simple terms.
+- `00_learning/object-reference-copy.html` - visualize two variables referring to the same object.
 
 ### 24. Playwright Basics
 
