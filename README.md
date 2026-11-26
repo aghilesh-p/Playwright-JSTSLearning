@@ -184,11 +184,24 @@ Learning JavaScript and TypeScript fundamentals as a foundation for working with
 - `17_Chapter_Objects_JS/137_Call_By_Ref_vs_Call_By_Val.js` - compare primitive assignment with shared object references.
 - `17_Chapter_Objects_JS/138_Shallow_copy_Deep_copy.js` - compare shared references, shallow copies, and deep copies with `structuredClone()`.
 
+### 18. JavaScript Multi-Dimensional Arrays and Patterns
+
+- `18_Chapter_Multi_Dimensional_Array/139_1D_Array_eg.js` - access values and characters in a one-dimensional array.
+- `18_Chapter_Multi_Dimensional_Array/140_Multi_Dim_array_eg.js` - access and update values in a two-dimensional number array.
+- `18_Chapter_Multi_Dimensional_Array/141_MultiDimArray_Real_eg.js` - represent test results in a matrix and print them with nested loops.
+- `18_Chapter_Multi_Dimensional_Array/142_MultiDimArray_RowSum.js` - calculate each row's total with `map()` and `reduce()`.
+- `18_Chapter_Multi_Dimensional_Array/143_Right_Hand_Pattern.js` - print a growing, left-aligned star triangle.
+- `18_Chapter_Multi_Dimensional_Array/144_Left_Hand_Pattern.js` - print a shrinking, left-aligned star triangle.
+- `18_Chapter_Multi_Dimensional_Array/145_Pyramid_Pattern.js` - print a centered star pyramid using spaces and stars.
+
 ### Learning Resources
 
 - `00_learning/charAt_vs_at.md` - compare string `charAt()` and `at()`.
 - `00_learning/134_Objects_Explained.md` - explain object methods and `this` with a simple example.
 - `00_learning/135_Complex_Objects_Explained.md` - explain nested objects, arrays, and methods in simple terms.
+- `00_learning/139_1D_Array_Explained.md` - explain a one-dimensional array, indexes, string characters, and common array examples.
+- `00_learning/143_145_Patterns_Explained.md` - explain increasing, decreasing, and pyramid star patterns with loop walkthroughs and diagrams.
+- `00_learning/143_145_Patterns_Explained.html` - show the same pattern lesson as an HTML page with responsive SVG diagrams.
 - `00_learning/object-reference-copy.html` - visualize two variables referring to the same object.
 
 ### 24. Playwright Basics

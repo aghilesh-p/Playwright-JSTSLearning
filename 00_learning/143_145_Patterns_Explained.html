@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Star Patterns in JavaScript: A Simple Guide</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: system-ui, sans-serif;
+      color: #172033;
+      background: #f4f7fb;
+    }
+
+    body {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+      line-height: 1.6;
+    }
+
+    main {
+      padding: 1.5rem;
+      border: 1px solid #d9e1ef;
+      border-radius: 14px;
+      background: white;
+      box-shadow: 0 8px 24px #17203312;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 1.25rem 0 2rem;
+    }
+
+    nav a, .source-link {
+      color: #2456a6;
+    }
+
+    section {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #d9e1ef;
+    }
+
+    pre {
+      overflow-x: auto;
+      padding: 1rem;
+      border-radius: 8px;
+      color: #f4f7fb;
+      background: #172033;
+      line-height: 1.45;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+
+    figure {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      border: 1px solid #d9e1ef;
+      border-radius: 10px;
+      background: #fbfcff;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      margin-top: 0.5rem;
+      color: #46536b;
+      font-size: 0.95rem;
+    }
+
+    .stars {
+      fill: #2456a6;
+      font-family: ui-monospace, monospace;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .row-label {
+      fill: #66738b;
+      font-family: system-ui, sans-serif;
+      font-size: 13px;
+    }
+
+    .callout {
+      padding: 0.8rem 1rem;
+      border-left: 4px solid #e5b64f;
+      background: #fff7e6;
+    }
+
+    .result {
+      padding: 0.75rem 1rem;
+      border-left: 4px solid #20835d;
+      background: #eaf7f0;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    .step-list li {
+      margin: 0.65rem 0;
+    }
+
+    .trace {
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      background: #f4f7fb;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 0.55rem 0.75rem;
+      border: 1px solid #d9e1ef;
+      text-align: left;
+    }
+
+    th {
+      background: #f4f7fb;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.65rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p><strong>JavaScript patterns, made simple</strong></p>
+      <h1>How do these star patterns work?</h1>
+      <p>
+        Imagine building a picture one line at a time. The outside loop chooses
+        the line, and the inside loop decides how many stars or spaces go on it.
+      </p>
+      <p>
+        These examples explain
+        <code>143_Right_Hand_Pattern.js</code>,
+        <code>144_Left_Hand_Pattern.js</code>, and
+        <code>145_Pyramid_Pattern.js</code>.
+      </p>
+      <nav aria-label="On this page">
+        <a href="#loops">Nested loops</a>
+        <a href="#increasing">Increasing triangle</a>
+        <a href="#decreasing">Decreasing triangle</a>
+        <a href="#pyramid">Pyramid</a>
+        <a href="#recap">Quick recap</a>
+      </nav>
+    </header>
+
+    <section id="loops">
+      <h2>First: what do the two loops do?</h2>
+      <p>
+        Think of a printer making a picture row by row. The outside loop says,
+        “Start the next row.” The inside loop says, “Print this row's
+        characters.”
+      </p>
+      <pre><code>outside loop: choose a row
+  inside loop: print the row's characters
+outside loop: choose the next row
+  inside loop: print that row's characters</code></pre>
+      <p>
+        When the inside loop finishes, the program moves to a new line. Then the
+        outside loop starts the next row.
+      </p>
+    </section>
+
+    <section id="increasing">
+      <h2>143: the triangle that grows</h2>
+      <p>
+        This program uses <code>n = 8</code>, so it prints eight rows. The
+        outside counter <code>i</code> starts at zero. The inside loop prints
+        one more star each time.
+      </p>
+      <pre><code>let n = 8;
+
+for (i = 0; i &lt; n; i++) {
+    for (j = 0; j &lt;= i; j++) {
+        process.stdout.write("*");
+    }
+    console.log("");
+}</code></pre>
+    <h3>Read the code one step at a time</h3>
+    <ol class="step-list">
+      <li><code>let n = 8;</code> sets the pattern size. This program will print 8 rows.</li>
+      <li><code>for (i = 0; i &lt; n; i++)</code> is the outside loop. It begins with <code>i = 0</code>, keeps going while <code>i</code> is less than 8, and adds 1 to <code>i</code> after each row. So <code>i</code> takes the values 0 through 7.</li>
+      <li><code>for (j = 0; j &lt;= i; j++)</code> is the inside loop. It starts <code>j</code> at 0 and repeats until <code>j</code> is greater than <code>i</code>. Because both 0 and <code>i</code> are included, it prints <code>i + 1</code> stars.</li>
+      <li><code>process.stdout.write("*");</code> prints one star without starting a new line. The inside loop runs this line over and over for the current row.</li>
+      <li>The first closing brace ends the inside loop. Then <code>console.log("");</code> moves to a new line, ready for the next row.</li>
+      <li>The last closing brace ends the outside loop. The program stops after it has printed all 8 rows.</li>
+    </ol>
+    <div class="trace">
+      <strong>Watch the first rows:</strong>
+      <ul>
+        <li><code>i = 0</code>: <code>j</code> is 0 once, so print <code>*</code>.</li>
+        <li><code>i = 1</code>: <code>j</code> is 0, then 1, so print <code>**</code>.</li>
+        <li><code>i = 2</code>: <code>j</code> is 0, 1, then 2, so print <code>***</code>.</li>
+      </ul>
+      <p>Each time the outside loop picks a new row, <code>j</code> starts over at 0.</p>
+    </div>
+
+      <figure>
+        <svg viewBox="0 0 360 310" role="img"
+             aria-labelledby="growing-title growing-description">
+          <title id="growing-title">Increasing triangle diagram</title>
+          <desc id="growing-description">
+            Eight rows of stars. The first row has one star, and each next row
+            adds one more, ending with eight stars.
+          </desc>
+          <text x="16" y="35" class="row-label">row 1</text>
+          <text x="90" y="35" class="stars">*</text>
+          <text x="16" y="70" class="row-label">row 2</text>
+          <text x="90" y="70" class="stars">**</text>
+          <text x="16" y="105" class="row-label">row 3</text>
+          <text x="90" y="105" class="stars">***</text>
+          <text x="16" y="140" class="row-label">row 4</text>
+          <text x="90" y="140" class="stars">****</text>
+          <text x="16" y="175" class="row-label">row 5</text>
+          <text x="90" y="175" class="stars">*****</text>
+          <text x="16" y="210" class="row-label">row 6</text>
+          <text x="90" y="210" class="stars">******</text>
+          <text x="16" y="245" class="row-label">row 7</text>
+          <text x="90" y="245" class="stars">*******</text>
+          <text x="16" y="280" class="row-label">row 8</text>
+          <text x="90" y="280" class="stars">********</text>
+        </svg>
+        <figcaption>
+          The row number and star count grow together: row 1 gets 1 star, row 2
+          gets 2, and row 8 gets 8.
+        </figcaption>
+      </figure>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Row</th><th><code>i</code></th><th>Stars</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>0</td><td>1</td></tr>
+            <tr><td>2</td><td>1</td><td>2</td></tr>
+            <tr><td>3</td><td>2</td><td>3</td></tr>
+            <tr><td>8</td><td>7</td><td>8</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        <code>process.stdout.write("*")</code> prints a star but stays on the
+        same line. <code>console.log("")</code> moves to the next line after
+        that row is finished.
+      </p>
+      <p class="callout">
+        <strong>Small code note:</strong> this file uses <code>i</code> and
+        <code>j</code> without declaring them. Use <code>let</code> in each
+        loop to avoid creating global variables or getting an error in strict
+        mode.
+      </p>
+    </section>
+
+    <section id="decreasing">
+      <h2>144: the triangle that shrinks</h2>
+      <p>
+        This one starts with five stars. The outside counter <code>i</code>
+        counts down from 5 to 1, so every new row gets one fewer star.
+      </p>
+      <pre><code>let n = 5;
+
+for (let i = n; i &gt;= 1; i--) {
+    for (let j = 1; j &lt;= i; j++) {
+        process.stdout.write("*");
+    }
+    console.log("");
+}</code></pre>
+    <h3>Read the code one step at a time</h3>
+    <ol class="step-list">
+      <li><code>let n = 5;</code> sets the size to 5, so the first row will have 5 stars.</li>
+      <li><code>for (let i = n; i &gt;= 1; i--)</code> is the outside loop. It starts <code>i</code> at 5, keeps going while <code>i</code> is at least 1, and subtracts 1 after each row.</li>
+      <li><code>for (let j = 1; j &lt;= i; j++)</code> is the inside loop. It repeats <code>i</code> times, because <code>j</code> counts from 1 through <code>i</code>.</li>
+      <li><code>process.stdout.write("*");</code> prints one star each time the inside loop repeats, without moving to a new line.</li>
+      <li>When the inside loop is finished, <code>console.log("");</code> ends that row. The outside loop then subtracts 1 from <code>i</code> and starts the next row.</li>
+      <li>The outside loop stops after the row where <code>i</code> is 1.</li>
+    </ol>
+    <div class="trace">
+      <strong>Watch the countdown:</strong>
+      <ul>
+        <li><code>i = 5</code>: print 5 stars.</li>
+        <li><code>i = 4</code>: print 4 stars.</li>
+        <li><code>i = 3</code>: print 3 stars.</li>
+        <li>Then 2 stars, then 1 star. After that, <code>i</code> becomes 0, so <code>i &gt;= 1</code> is false and the loop ends.</li>
+      </ul>
+    </div>
+
+      <figure>
+        <svg viewBox="0 0 360 210" role="img"
+             aria-labelledby="shrinking-title shrinking-description">
+          <title id="shrinking-title">Decreasing triangle diagram</title>
+          <desc id="shrinking-description">
+            Five rows of stars. The first row has five stars, and each next row
+            removes one, ending with one star.
+          </desc>
+          <text x="16" y="35" class="row-label">row 1</text>
+          <text x="90" y="35" class="stars">*****</text>
+          <text x="16" y="70" class="row-label">row 2</text>
+          <text x="90" y="70" class="stars">****</text>
+          <text x="16" y="105" class="row-label">row 3</text>
+          <text x="90" y="105" class="stars">***</text>
+          <text x="16" y="140" class="row-label">row 4</text>
+          <text x="90" y="140" class="stars">**</text>
+          <text x="16" y="175" class="row-label">row 5</text>
+          <text x="90" y="175" class="stars">*</text>
+        </svg>
+        <figcaption>
+          The star count follows the value of <code>i</code>: 5, 4, 3, 2, 1.
+          Each row starts at the left.
+        </figcaption>
+      </figure>
+      <p>
+        The filename calls this the “left hand” pattern. The code is what tells
+        us exactly what it looks like: these rows are all left-aligned and get
+        shorter.
+      </p>
+    </section>
+
+    <section id="pyramid">
+      <h2>145: the pyramid</h2>
+      <p>
+        The pyramid needs stars <em>and</em> spaces. Each row is first built in
+        a string called <code>row</code>, then printed all at once.
+      </p>
+      <pre><code>let n = 3;
+
+for (let i = 1; i &lt;= n; i++) {
+    let row = "";
+    for (let j = 1; j &lt;= n - i; j++) {
+        row += " ";
+    }
+    for (let j = 1; j &lt;= 2 * i - 1; j++) {
+        row = row + "*";
+    }
+    console.log(row);
+}</code></pre>
+      <h3>Read the code one step at a time</h3>
+      <ol class="step-list">
+        <li><code>let n = 3;</code> sets the height of the pyramid to 3 rows.</li>
+        <li><code>for (let i = 1; i &lt;= n; i++)</code> is the outside loop. It chooses rows 1, 2, and 3.</li>
+        <li><code>let row = "";</code> starts a fresh, empty string for this row. Starting fresh means the new row does not contain characters from the previous row.</li>
+        <li><code>for (let j = 1; j &lt;= n - i; j++)</code> counts how many leading spaces to add. The first row gets <code>3 - 1 = 2</code> spaces; the second gets 1; the third gets 0.</li>
+        <li><code>row += " ";</code> adds one space to the end of <code>row</code> each time that first inside loop repeats.</li>
+        <li><code>for (let j = 1; j &lt;= 2 * i - 1; j++)</code> counts how many stars to add. The row gets 1, 3, then 5 stars.</li>
+        <li><code>row = row + "*";</code> adds one star to the end of the row each time that second inside loop repeats.</li>
+        <li><code>console.log(row);</code> prints the completed row and starts a new line.</li>
+        <li>After printing, the outside loop increases <code>i</code>. The program starts an empty string and builds the next row.</li>
+      </ol>
+      <div class="trace">
+        <strong>Build each row:</strong>
+        <ul>
+          <li><code>i = 1</code>: add 2 spaces, then 1 star: <code>  *</code>.</li>
+          <li><code>i = 2</code>: add 1 space, then 3 stars: <code> ***</code>.</li>
+          <li><code>i = 3</code>: add 0 spaces, then 5 stars: <code>*****</code>.</li>
+        </ul>
+      </div>
+
+      <p>For each row, the program does two small jobs:</p>
+      <ol>
+        <li>Add spaces at the beginning: <code>n - i</code> spaces.</li>
+        <li>Add stars after the spaces: <code>2 * i - 1</code> stars.</li>
+      </ol>
+
+      <figure>
+        <svg viewBox="0 0 360 190" role="img"
+             aria-labelledby="pyramid-title pyramid-description">
+          <title id="pyramid-title">Pyramid diagram</title>
+          <desc id="pyramid-description">
+            A centered pyramid with three rows. It has two spaces and one star
+            on the first row, one space and three stars on the second, and five
+            stars on the last row.
+          </desc>
+          <text x="180" y="48" text-anchor="middle" class="stars">*</text>
+          <text x="180" y="98" text-anchor="middle" class="stars">***</text>
+          <text x="180" y="148" text-anchor="middle" class="stars">*****</text>
+        </svg>
+        <figcaption>
+          The star lines are centered. The spaces before the stars are invisible
+          in this picture, so the first row is placed over the middle of the
+          base.
+        </figcaption>
+      </figure>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th><code>i</code> (row)</th>
+              <th>Spaces (<code>n - i</code>)</th>
+              <th>Stars (<code>2 * i - 1</code>)</th>
+              <th>What the row contains</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>2</td><td>1</td><td><code>2 spaces + *</code></td></tr>
+            <tr><td>2</td><td>1</td><td>3</td><td><code>1 space + ***</code></td></tr>
+            <tr><td>3</td><td>0</td><td>5</td><td><code>*****</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="result">
+        <p><strong>Console output</strong></p>
+        <pre><code>  *
+ ***
+*****</code></pre>
+      </div>
+      <p>
+        The stars go 1, 3, 5: two more each time. The spaces go 2, 1, 0: one
+        fewer each time. That is how the pyramid grows in the middle.
+      </p>
+    </section>
+
+    <section id="recap">
+      <h2>Quick recap</h2>
+      <ul>
+        <li>The outside loop makes the rows.</li>
+        <li>The inside loop decides what goes in each row.</li>
+        <li>The first pattern adds one star on every row.</li>
+        <li>The second pattern removes one star on every row.</li>
+        <li>The pyramid adds spaces first so its stars look centered.</li>
+        <li><code>process.stdout.write()</code> stays on the same line; <code>console.log()</code> starts a new one.</li>
+      </ul>
+      <p>
+        <a class="source-link" href="143_145_Patterns_Explained.md">
+          Read the Markdown version of this lesson
+        </a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
